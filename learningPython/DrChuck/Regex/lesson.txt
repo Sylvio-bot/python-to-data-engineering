@@ -1,0 +1,247 @@
+:str method
+    .strip() : remove a white space
+    .title() : capitalaey
+    .split( , "")
+
+f : format string  you put it before " in print
+loat 
+   round(number[, ndigits]) || f"{z:.2f}  .nf means n digists
+  #[] optional
+   {z:,} 
+
+def (define) c
+    def name_function (par)
+
+scope refer to a variable only existing in the context
+
+--------------------------------------------------------------------------------
+sentences or lines
+ x = 2  <--- Assignments statement
+x = x + 2 <--- Assignment with expression
+print (x) <--- print statement
+
+interactive versus Script
+   .  interactive : you type directly to python one line at a time and it responds
+   . you enter a sequence  of statements (lines) into a file using a text editor and tell python to execute the statements in the file
+  
+
+sequential step : top to bottom
+conditional steps
+       if  bool:
+            action
+Repeated Steps
+        while bool:
+              action
+
+variables
+A varialbes is a named place in the memory where a programmer can store data and later retrieve the data using th varible "name"
+
+Numeric Expression
+Operator Precedence Rules 
+      ()---> **(power)--->*  ,  / ,  %(remainder) ,----> + , -
+
+Type Matters
+  type ()
+Type conversions
+    float() , int()
+
+Integer Division ---> produces a floating point result
+
+sring conversion
+
+User  Input : input() ---> a string  
+
+Conditional Execution
++Two-way Decisions
+    if  bool : 
+        action
+   else :
+          action
+
++Multi-way
+ if bool :
+      action
+elif bool:
+      action
+else: 
+       action
+
+IMPORTANT :Indentation
+
+The try / except Structure
+when the try block fails -it just drops into the except:clause and the progamm continues.
+else it just skips the except block
+
+Function( stored and reused )
+    def
+
+   function Definition
+              argument(s) ---> function --->
+
+Loops and iteration
+    while bool : (True )
+             action
+Breakin out of a loop
+The break statement ends the current loop and jumps to the statement immediately
+following the loop
+
+Finishing an Iteration with continue
+The continue statement ends the current iteration and jumps to the top of the loop and  starts the next iterati on
+
+Definite Loops  (for)
+for  *** in  l iterates trhough the sequence:
+
+Loop idiomds
+
+using a boolean variable (True or False)
+KEYWORD is ( bool  compare a type)
+
+Strings
+      index begin 0
+     method
+         len(str)
+
+slicing strings
+   [start_index  :  index_not_inculde]
+
+string concatenation  with + operator
+using in as logical operator :
+
+String library
+   .lower() ---> str become a lowercase
+   .upper()--> uppercade
+   .repace(old, new)--->
+   .strip()  ,rstrip() , lstript ---> remove a withespace , right , left
+   .statwith('str')---> True or Fuls
+   .find('str' ,[*start_index-reaserch) --->first the occurrence of the substring || -1 means not found
+
+dir() ---> see all methode in str lib
+
+ 
+File
+opening file
+ open (filename , mode)==> file handle use to manipulate the file
+/n is a character
+
+Reading file
+    a file handle open for read can be treated as a sequence of strings 
+
+we can read the whole file (newlines and all) into a single string 
+        file = open("filename")
+        inp = flle.read()
+
+Programming
+Algorithms 
+      A set of rules or steps used to solve a problem
+Data Structures
+     A parituclar way of organizing data in  a computer 
+
+A List is a Kind of Collection
+
+    A collection allows us to pu many values in a singles " variable"
+    A Xollesction is nice because we can carry all many values aroud in on convenient package
+
+ex: frends =  ["Joseph" , "Glenn", "Sally']
+Looking inside List
+  use square brackets  with the first inde == 0
+
+Lists are Mutable
+      .strings are "immutable" we cannot change the contents of a string - we must make a new string to make any change 
+      .List are "mutable"-we can change an element of a list using the index operator
+
+range(par) returns a list of numbers that range from zero to one less than the par
+ex:range(4) ===> [0,1,2,3]
+concatenating  lists using  +
+
+Lists can be sliced using  : 
+
+Building a LIST from scratch
+create an empty list with list()
+add :  append
+
+Is Something in a list?   :  item in list  ! item not in list
+
+sort() ==> itself
+
+Buit-in Functions and Lists
+   len(list)
+   max(list)
+   min(list)
+  sum(list)
+
+string vs List
+str.split([delimiter]) == breaks a str into parts and produces a list of strings
+
+chap 9 Dictionary
+list : a linear collection of values that stay in order
+Dictionary: a "bag" go values, each  with its own label
+    .Dictionaries are Python'smost powerful data collection
+    .Dictionaries allow us to fast database-like operation in Python
+    .Dictionaryies have different names in different languages
+           .Associative Array-perl/PHP
+           .Properties or Map or HashMap-Java
+           .Property Bag-C#/.Net
+
+purse = dict() || {}
+purse["key"] = value;
+
+Dictionary Literal
+pures = {'key' = value , 'key' = value}
+
+get method for dictionaries   : dic.get(key , default= 0) 
+
+Counting Pattern
+
+Retrieving lists of keys and values
+    dic.keys()--->list of key
+    dic.values()--->list of value
+   dic.items() --> both   [("key,value ---tuple",...] --- for (k,v) in dic.items()
+
+chap 10 Tuples are like lists
+   Tuples are another kind of sequence that functions much like a list 
+   They have elements which are indexed starting at 0
+
+ex:  x = ("blabla" ,....)
+
+Unlike a list , once you create  a tuple , you cannot alter its contents -similar to string
+
+Tuples and Assignemment
+  . we can also pu a tuple on the left-hand side of an assignment statement
+  .we can even omit the  parentheses
+      (x , y ) = (4 ,'fred")
+
+Tuples and Dictionaries 
+      the items() method in dictionaries  returns a list of (key , value ) tuples
+
+Tuples are Comparables
+   The comparison operators work with tuples and other sequences . If the first item is equal .Python goes on to the next element, and so on  until ti finds that differ.
+  >>>(1,2,3) < (5,1,2)
+ true
+>>>("Jones", "sally') <("Jones", "sam")
+True
+
+Sorting List of Tuples
+.we can take advantage ofthe ability to sort a list of tuples to get a sorted version of a dictionarirst we sort th dictionary by the key using the items() method fand sorted() function.
+
+Sort by values instead of key
+.If we could construct a list of Tuples of the form (Value , Key ) we could sort by value
+.we do this with a for loop that creates a list of tuples
+
+chap 11 :Regular Expressions
+     for matching strings  of text , such as particular characters, words , or patterns of charcters
+
+Regular Expression Quick Guide
+     ^   == matches the beginnig of al ine
+     $  == matches  the end of the line
+      .  ==  matches any character.
+      \s ==  matches whitspace
+      \S == matches any non-whitespace charater
+     • == repeats a charcter zero or more times 
+    + == repeats a charcter  one  or  more times
+     *?  repeats a character zero or more times (non-greedy)
+
+The Regular Expression Module
+        use the library
+        .using re.search() like find()
+    
+

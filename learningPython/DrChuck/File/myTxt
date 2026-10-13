@@ -1,0 +1,4 @@
+str method
+    .strip() : remove a white space
+    .title() : capitalaey
+    .split( , "")
